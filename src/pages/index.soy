@@ -6,9 +6,10 @@ description: "The best way to audit and secure your AWS environnement."
 {namespace pageIndex}
 
 /**
- * @param site
  */
 {template .render}
+	{@param site: ?}
+
 	{call main.render data="all"}
 		{param content kind="html"}
 			{call .header data="all" /}
@@ -22,9 +23,10 @@ description: "The best way to audit and secure your AWS environnement."
 {/template}
 
 /**
- * @param site
  */
 {template .header}
+	{@param site: ?}
+
 	<header class="header">
 		<div class="container">
 			<h1 class="header-title">{$site.title}</h1>
@@ -39,7 +41,6 @@ description: "The best way to audit and secure your AWS environnement."
 {/template}
 
 /**
- *
  */
 {template .why}
 	<article class="about">
@@ -55,7 +56,6 @@ description: "The best way to audit and secure your AWS environnement."
 {/template}
 
 /**
- *
  */
 {template .features}
 	<div class="features">
@@ -88,7 +88,6 @@ description: "The best way to audit and secure your AWS environnement."
 {/template}
 
 /**
- *
  */
 {template .how}
 	<article class="about">
@@ -104,7 +103,6 @@ description: "The best way to audit and secure your AWS environnement."
 {/template}
 
 /**
- *
  */
 {template .highlights}
 	<div class="highlights">
@@ -141,7 +139,6 @@ description: "The best way to audit and secure your AWS environnement."
 {/template}
 
 /**
- *
  */
 {template .footer}
 	<footer class="footer">
