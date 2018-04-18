@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "test",
+  "name": "ivoryshield",
   "version": "0.0.0",
   "scripts": {
     "start": "electric"
