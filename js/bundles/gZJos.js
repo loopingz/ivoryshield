@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,17,18,19],[
+webpackJsonppageComponent([4,17,18,19],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([2,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIOROITY
+    // PRIORITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([2,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.0';
+    hooks.version = '2.22.1';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня в] LT',
-            nextDay: '[Завтра в] LT',
-            lastDay: '[Вчера в] LT',
+            sameDay: '[Сегодня, в] LT',
+            nextDay: '[Завтра, в] LT',
+            lastDay: '[Вчера, в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd [в] LT';
+                            return '[В следующее] dddd, [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd [в] LT';
+                            return '[В следующий] dddd, [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd [в] LT';
+                            return '[В следующую] dddd, [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd [в] LT';
+                        return '[Во] dddd, [в] LT';
                     } else {
-                        return '[В] dddd [в] LT';
+                        return '[В] dddd, [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd [в] LT';
+                            return '[В прошлое] dddd, [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd [в] LT';
+                            return '[В прошлый] dddd, [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd [в] LT';
+                            return '[В прошлую] dddd, [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd [в] LT';
+                        return '[Во] dddd, [в] LT';
                     } else {
-                        return '[В] dddd [в] LT';
+                        return '[В] dddd, [в] LT';
                     }
                 }
             },
@@ -28757,14 +28757,12 @@ exports.default = parseFromAnchor;
 /* 231 */,
 /* 232 */,
 /* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */
+/* 234 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sahRq", function() { return sahRq; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gZJos", function() { return gZJos; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28776,15 +28774,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from second-step.soy.
+// This file was automatically generated from first-step.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace sahRq.
+ * @fileoverview Templates in namespace gZJos.
  * @public
  */
 
-goog.module('sahRq.incrementaldom');
+goog.module('gZJos.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28818,10 +28816,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param459 = function() {
+  var param438 = function() {
     ie_open('h2');
-      var dyn37 = opt_data.page.title;
-      if (typeof dyn37 == 'function') dyn37(); else if (dyn37 != null) itext(dyn37);
+      var dyn36 = opt_data.page.title;
+      if (typeof dyn36 == 'function') dyn36(); else if (dyn36 != null) itext(dyn36);
     ie_close('h2');
     $templateAlias2({code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
     ie_open('p');
@@ -28839,11 +28837,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param459}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param438}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'sahRq.render';
+  $render.soyTemplateName = 'gZJos.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28853,14 +28851,16 @@ return exports;
 
 });
 
-class sahRq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(sahRq, templates);
+class gZJos extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gZJos, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 235 */,
+/* 236 */,
 /* 237 */,
 /* 238 */,
 /* 239 */,
@@ -28875,8 +28875,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(sahRq, templates);
 /* 248 */,
 /* 249 */,
 /* 250 */,
-/* 251 */,
-/* 252 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28912,9 +28911,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _secondStepSoy = __webpack_require__(236);
+var _firstStepSoy = __webpack_require__(234);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28924,23 +28923,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var sahRq = function (_Component) {
-  _inherits(sahRq, _Component);
+var gZJos = function (_Component) {
+  _inherits(gZJos, _Component);
 
-  function sahRq() {
-    _classCallCheck(this, sahRq);
+  function gZJos() {
+    _classCallCheck(this, gZJos);
 
-    return _possibleConstructorReturn(this, (sahRq.__proto__ || Object.getPrototypeOf(sahRq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (gZJos.__proto__ || Object.getPrototypeOf(gZJos)).apply(this, arguments));
   }
 
-  return sahRq;
+  return gZJos;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(sahRq, _secondStepSoy2.default);
+_metalSoy2.default.register(gZJos, _firstStepSoy2.default);
 
-exports.default = sahRq;
+exports.default = gZJos;
 
 /***/ })
-],[252]);
+],[251]);
