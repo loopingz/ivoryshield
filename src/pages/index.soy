@@ -46,9 +46,15 @@ description: "The best way to audit and secure your AWS environnement."
 	<article class="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-md-offset-2">
-					<h3 class="about-title">Start with why</h3>
-					<p class="about-description">Through the WHY, a story will arise, which will create trust and make an idea, a service, or a project unique. As Simon Sinek has said, having loyal users is all about attracting the people who share your fundamental beliefs. Remember: People don't buy what you do. They buy why you do it. I'll say it again: People don't buy what you do. They buy why you do it.</p>
+				<div class="flex-horizontal">
+					<h2 class="about-title">Improve your audit security process !</h2>
+          <img id="lock" src="../images/lock_outline.png" alt="lock"/>
+          <h3 class="about-title">IvoryShield is a great tool if you run complex AWS infrastructures.</h3>
+          <h3 class="about-title">It is strongly recommanded to plan a security audit :</h3>
+          <p class="content-text">Periodically or when you are alerted</p>
+          <p class="content-text">In case of staff turnover</p>
+          <p class="content-text">If you stop using services</p>
+          <p class="content-text">In case you change your infrastructure</p>
 				</div>
 			</div>
 		</div>
@@ -60,27 +66,85 @@ description: "The best way to audit and secure your AWS environnement."
 {template .features}
 	<div class="features">
 		<div class="container">
-			<div class="row">
-				<section class="feature col-md-4 col-md-offset-2">
+    <h3 class="ressources-title">Here are all the available ressources for now !</h3>
+			<div class="flex-horizontal-icons">
+				<section>
 					<div class="feature-graphic">
-						<span class="icon-16-bullhorn"></span>
+						<img src="../images/Compute_AmazonEC2_AMI.svg" />
 					</div>
-					<h3 class="feature-title">Heading</h3>
-					<p class="feature-description">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.</p>
+					<h3 class="feature-title">Amazon Machine Images</h3>
 				</section>
-				<section class="feature col-md-4">
+				<section>
 					<div class="feature-graphic">
-						<span class="icon-16-lock"></span>
+						<img src="../images/Compute_AmazonEC2_instances.svg" />
 					</div>
-					<h3 class="feature-title">Heading</h3>
-					<p class="feature-description">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.</p>
+					<h3 class="feature-title">EC2 instances</h3>
 				</section>
-				<section class="feature col-md-4">
+				<section>
 					<div class="feature-graphic">
-						<span class="icon-16-calendar"></span>
+						<img src="../images/Compute_AmazonEC2_ElasticIPaddress.svg" />
 					</div>
-					<h3 class="feature-title">Heading</h3>
-					<p class="feature-description">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.</p>
+					<h3 class="feature-title">Elastic IP address</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/SecurityIdentityCompliance_IAM.svg" />
+					</div>
+					<h3 class="feature-title">IAM User</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/NetworkingContentDelivery_AmazonVPC_internetgateway.svg" />
+					</div>
+					<h3 class="feature-title">Internet Gateway</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/NetworkingContentDelivery_AmazonVPC_VPCNATgateway.svg" />
+					</div>
+					<h3 class="feature-title">NAT Gateway</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/NetworkingContentDelivery_AmazonVPC_elasticnetworkinterface.svg" />
+					</div>
+					<h3 class="feature-title">Network Interface</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/Storage_AmazonS3.svg" />
+					</div>
+					<h3 class="feature-title">S3 Bucket</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/Compute_AmazonEC2.svg" />
+					</div>
+					<h3 class="feature-title">Security Group</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/Storage_snapshot.svg" />
+					</div>
+					<h3 class="feature-title">Snapshot</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/Compute_AmazonVPC.svg" />
+					</div>
+					<h3 class="feature-title">Subnet</h3>
+        </section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/Storage_volume.svg" />
+					</div>
+					<h3 class="feature-title">Storage Volume</h3>
+				</section>
+				<section>
+					<div class="feature-graphic">
+						<img src="../images/General_virtualprivatecloud.svg" />
+					</div>
+					<h3 class="feature-title">Virtual Private Cloud</h3>
 				</section>
 			</div>
 		</div>
@@ -95,8 +159,11 @@ description: "The best way to audit and secure your AWS environnement."
 			<div class="row">
 				<div class="col-md-12 col-md-offset-2">
 					<h3 class="about-title">It's easier than you think</h3>
-					<p class="about-description">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.</p>
-				</div>
+					<p class="about-description">Check out our GitHub repo !</p>
+        </div>
+        <a href="https://github.com/loopingz/ivoryshield">
+			    <img id="githubLogo" src="../images/github.png" />
+        </a>
 			</div>
 		</div>
 	</article>

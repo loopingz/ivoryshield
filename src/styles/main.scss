@@ -1,5 +1,6 @@
 $accent: #4285F4;
 $main-color: #59ABE3;
+$secondary-color: #366395;
 
 @import "marble";
 
@@ -28,10 +29,76 @@ $main-color: #59ABE3;
   padding-top: 50px;
 }
 .header-title {
-  color: main-color;
+  color: $secondary-color;
   font-family: "Montserrat";
   font-size: 3.5em;
 }
 .topbar-link {
-  color: main-color;
+  color: $main-color;
+}
+.topbar {
+  background-color: $secondary-color;
+}
+.about{
+  background-color: $secondary-color;
+}
+.about div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.about div h3{
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.about div ul li{
+  list-style-type: none;
+}
+#lock{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+#githubLogo{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.flex-horizontal{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-horizontal-icons{
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-horizontal-icons section{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 150px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.flex-horizontal-icons section h3{
+  text-align: center;
+}
+.content-text{
+  color: white;
+  font-weight: 200;
+  font-size: 20px;
+}
+.ressources-title{
+  font-size: 30px;
+  color: #f68536;
+  text-align: center;
 }
