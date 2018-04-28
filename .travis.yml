@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get install -qq awscli
 script:
   - npm i -g electric-cli
-  - yarn install
+  - npm install
   - electric build
   - aws s3 sync --region=us-west-2 dist/ s3://ivoryshield.io/
   - electric deploy -e ghpages
