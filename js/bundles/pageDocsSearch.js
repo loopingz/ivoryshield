@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,17,18,19],[
+webpackJsonppageComponent([6,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([6,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIORITY
+    // PRIOROITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([6,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.1';
+    hooks.version = '2.22.0';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня, в] LT',
-            nextDay: '[Завтра, в] LT',
-            lastDay: '[Вчера, в] LT',
+            sameDay: '[Сегодня в] LT',
+            nextDay: '[Завтра в] LT',
+            lastDay: '[Вчера в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd, [в] LT';
+                            return '[В следующее] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd, [в] LT';
+                            return '[В следующий] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd, [в] LT';
+                            return '[В следующую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd, [в] LT';
+                            return '[В прошлое] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd, [в] LT';
+                            return '[В прошлый] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd, [в] LT';
+                            return '[В прошлую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -28754,8 +28754,7 @@ exports.default = parseFromAnchor;
 /* 228 */,
 /* 229 */,
 /* 230 */,
-/* 231 */,
-/* 232 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28821,7 +28820,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   var $$temp;
-  var param305 = function() {
+  var param323 = function() {
     $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
     ie_open('div', null, null,
         'class', 'sidebar-offset');
@@ -28841,8 +28840,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('p', null, null,
                 'class', 'docs-home-top-description');
               itext('Start learning how to leverage the power of ');
-              var dyn27 = opt_data.site.title;
-              if (typeof dyn27 == 'function') dyn27(); else if (dyn27 != null) itext(dyn27);
+              var dyn26 = opt_data.site.title;
+              if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
               itext('.');
             ie_close('p');
           ie_close('div');
@@ -28857,7 +28856,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_close('div');
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param305}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param323}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -28879,6 +28878,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 
 
 /***/ }),
+/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
@@ -28893,9 +28893,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28931,7 +28929,7 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _searchSoy = __webpack_require__(232);
+var _searchSoy = __webpack_require__(231);
 
 var _searchSoy2 = _interopRequireDefault(_searchSoy);
 
@@ -28962,4 +28960,4 @@ _metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
 exports.default = pageDocsSearch;
 
 /***/ })
-],[249]);
+],[247]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([0,17,18,19],[
+webpackJsonppageComponent([0,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([0,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIORITY
+    // PRIOROITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([0,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.1';
+    hooks.version = '2.22.0';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня, в] LT',
-            nextDay: '[Завтра, в] LT',
-            lastDay: '[Вчера, в] LT',
+            sameDay: '[Сегодня в] LT',
+            nextDay: '[Завтра в] LT',
+            lastDay: '[Вчера в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd, [в] LT';
+                            return '[В следующее] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd, [в] LT';
+                            return '[В следующий] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd, [в] LT';
+                            return '[В следующую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd, [в] LT';
+                            return '[В прошлое] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd, [в] LT';
+                            return '[В прошлый] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd, [в] LT';
+                            return '[В прошлую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -28760,8 +28760,7 @@ exports.default = parseFromAnchor;
 /* 234 */,
 /* 235 */,
 /* 236 */,
-/* 237 */,
-/* 238 */
+/* 237 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28826,7 +28825,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param326 = function() {
+  var param344 = function() {
     ie_open('div');
       ie_open('header', null, null,
           'class', 'header');
@@ -28834,20 +28833,20 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             'class', 'container');
           ie_open('h1', null, null,
               'class', 'header-title');
-            var dyn28 = opt_data.page.title;
-            if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
+            var dyn27 = opt_data.page.title;
+            if (typeof dyn27 == 'function') dyn27(); else if (dyn27 != null) itext(dyn27);
           ie_close('h1');
           ie_open('h2', null, null,
               'class', 'header-subtitle');
-            var dyn29 = opt_data.page.description;
-            if (typeof dyn29 == 'function') dyn29(); else if (dyn29 != null) itext(dyn29);
+            var dyn28 = opt_data.page.description;
+            if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
           ie_close('h2');
         ie_close('div');
       ie_close('header');
       $templateAlias2({updates: opt_data.page.updates}, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param326}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param344}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -28869,6 +28868,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(updatesIndex, templat
 
 
 /***/ }),
+/* 238 */,
 /* 239 */,
 /* 240 */,
 /* 241 */,
@@ -28883,9 +28883,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(updatesIndex, templat
 /* 250 */,
 /* 251 */,
 /* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28921,7 +28919,7 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _indexSoy = __webpack_require__(238);
+var _indexSoy = __webpack_require__(237);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28952,4 +28950,4 @@ _metalSoy2.default.register(updatesIndex, _indexSoy2.default);
 exports.default = updatesIndex;
 
 /***/ })
-],[255]);
+],[253]);

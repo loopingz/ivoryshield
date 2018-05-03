@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,17,18,19],[
+webpackJsonppageComponent([7,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([7,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIORITY
+    // PRIOROITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([7,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.1';
+    hooks.version = '2.22.0';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня, в] LT',
-            nextDay: '[Завтра, в] LT',
-            lastDay: '[Вчера, в] LT',
+            sameDay: '[Сегодня в] LT',
+            nextDay: '[Завтра в] LT',
+            lastDay: '[Вчера в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd, [в] LT';
+                            return '[В следующее] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd, [в] LT';
+                            return '[В следующий] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd, [в] LT';
+                            return '[В следующую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd, [в] LT';
+                            return '[В прошлое] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd, [в] LT';
+                            return '[В прошлый] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd, [в] LT';
+                            return '[В прошлую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -28753,8 +28753,7 @@ exports.default = parseFromAnchor;
 /* 227 */,
 /* 228 */,
 /* 229 */,
-/* 230 */,
-/* 231 */
+/* 230 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28866,8 +28865,8 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
           ie_open('p', null, null,
               'class', 'docs-home-top-description');
             itext('Start learning how to leverage the power of ');
-            var dyn25 = opt_data.site.title;
-            if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
+            var dyn24 = opt_data.site.title;
+            if (typeof dyn24 == 'function') dyn24(); else if (dyn24 != null) itext(dyn24);
             itext('.');
           ie_close('p');
         ie_close('div');
@@ -28921,26 +28920,26 @@ function $topics(opt_data, opt_ignored, opt_ijData) {
               'class', 'col-md-12 col-md-offset-2 col-xs-16');
             ie_open('div', null, null,
                 'class', 'row');
-              var childIdList299 = opt_data.page.childIds;
-              var childIdListLen299 = childIdList299.length;
-              for (var childIdIndex299 = 0; childIdIndex299 < childIdListLen299; childIdIndex299++) {
-                var childIdData299 = childIdList299[childIdIndex299];
-                var topic__soy289 = opt_data.page.children[childIdData299];
-                if (! topic__soy289.hidden) {
+              var childIdList317 = opt_data.page.childIds;
+              var childIdListLen317 = childIdList317.length;
+              for (var childIdIndex317 = 0; childIdIndex317 < childIdListLen317; childIdIndex317++) {
+                var childIdData317 = childIdList317[childIdIndex317];
+                var topic__soy307 = opt_data.page.children[childIdData317];
+                if (! topic__soy307.hidden) {
                   ie_open('div', null, null,
                       'class', 'col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1');
                     ie_open('a', null, null,
                         'class', 'topic radial-out',
-                        'href', topic__soy289.url);
+                        'href', topic__soy307.url);
                       ie_open('div', null, null,
                           'class', 'topic-icon');
                         ie_void('span', null, null,
-                            'class', 'icon-16-' + topic__soy289.icon);
+                            'class', 'icon-16-' + topic__soy307.icon);
                       ie_close('div');
                       ie_open('h3', null, null,
                           'class', 'topic-title');
-                        var dyn26 = topic__soy289.title;
-                        if (typeof dyn26 == 'function') dyn26(); else if (dyn26 != null) itext(dyn26);
+                        var dyn25 = topic__soy307.title;
+                        if (typeof dyn25 == 'function') dyn25(); else if (dyn25 != null) itext(dyn25);
                       ie_close('h3');
                     ie_close('a');
                   ie_close('div');
@@ -28975,6 +28974,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 
 
 /***/ }),
+/* 231 */,
 /* 232 */,
 /* 233 */,
 /* 234 */,
@@ -28989,9 +28989,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsIndex, templa
 /* 243 */,
 /* 244 */,
 /* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29027,7 +29025,7 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _indexSoy = __webpack_require__(231);
+var _indexSoy = __webpack_require__(230);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -29058,4 +29056,4 @@ _metalSoy2.default.register(pageDocsIndex, _indexSoy2.default);
 exports.default = pageDocsIndex;
 
 /***/ })
-],[248]);
+],[246]);

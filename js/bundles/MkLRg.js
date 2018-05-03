@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([9,17,18,19],[
+webpackJsonppageComponent([12,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([9,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIORITY
+    // PRIOROITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([9,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.1';
+    hooks.version = '2.22.0';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня, в] LT',
-            nextDay: '[Завтра, в] LT',
-            lastDay: '[Вчера, в] LT',
+            sameDay: '[Сегодня в] LT',
+            nextDay: '[Завтра в] LT',
+            lastDay: '[Вчера в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd, [в] LT';
+                            return '[В следующее] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd, [в] LT';
+                            return '[В следующий] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd, [в] LT';
+                            return '[В следующую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd, [в] LT';
+                            return '[В прошлое] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd, [в] LT';
+                            return '[В прошлый] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd, [в] LT';
+                            return '[В прошлую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -28748,16 +28748,12 @@ exports.default = parseFromAnchor;
 /* 222 */,
 /* 223 */,
 /* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */
+/* 225 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MzZnX", function() { return MzZnX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MkLRg", function() { return MkLRg; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28773,11 +28769,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace MzZnX.
+ * @fileoverview Templates in namespace MkLRg.
  * @public
  */
 
-goog.module('MzZnX.incrementaldom');
+goog.module('MkLRg.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28811,10 +28807,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param406 = function() {
+  var param372 = function() {
     ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34(); else if (dyn34 != null) itext(dyn34);
+      var dyn30 = opt_data.page.description;
+      if (typeof dyn30 == 'function') dyn30(); else if (dyn30 != null) itext(dyn30);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
@@ -28822,15 +28818,16 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
       ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+        itext('Mauris iaculis, lectus sagittis consequat accumsan, tellus neque blandit justo, a consectetur odio turpis a magna. In ac euismod diam. Praesent non elementum turpis. Aliquam vitae vestibulum arcu. Praesent eleifend turpis arcu.');
+      ie_close('p');
+      $templateAlias2({code: 'var hi = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '.hi:before {\n    content: \'Hello, World\';\n}', mode: 'css'}, null, opt_ijData);
+      ie_open('p');
+        itext('Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.');
       ie_close('p');
       ie_open('p');
         itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-      ie_close('p');
-      $templateAlias2({code: 'alert(\'Hello World\');', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
         itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
@@ -28880,11 +28877,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param406}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param372}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'MzZnX.render';
+  $render.soyTemplateName = 'MkLRg.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28894,14 +28891,18 @@ return exports;
 
 });
 
-class MzZnX extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MzZnX, templates);
+class MkLRg extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MkLRg, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
 /* 230 */,
 /* 231 */,
 /* 232 */,
@@ -28912,13 +28913,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MzZnX, templates);
 /* 237 */,
 /* 238 */,
 /* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28954,7 +28949,7 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _indexSoy = __webpack_require__(229);
+var _indexSoy = __webpack_require__(225);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -28966,23 +28961,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MzZnX = function (_Component) {
-  _inherits(MzZnX, _Component);
+var MkLRg = function (_Component) {
+  _inherits(MkLRg, _Component);
 
-  function MzZnX() {
-    _classCallCheck(this, MzZnX);
+  function MkLRg() {
+    _classCallCheck(this, MkLRg);
 
-    return _possibleConstructorReturn(this, (MzZnX.__proto__ || Object.getPrototypeOf(MzZnX)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (MkLRg.__proto__ || Object.getPrototypeOf(MkLRg)).apply(this, arguments));
   }
 
-  return MzZnX;
+  return MkLRg;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MzZnX, _indexSoy2.default);
+_metalSoy2.default.register(MkLRg, _indexSoy2.default);
 
-exports.default = MzZnX;
+exports.default = MkLRg;
 
 /***/ })
-],[246]);
+],[240]);

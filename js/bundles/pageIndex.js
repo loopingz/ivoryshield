@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([5,17,18,19],[
+webpackJsonppageComponent([5,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([5,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIORITY
+    // PRIOROITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([5,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.1';
+    hooks.version = '2.22.0';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня, в] LT',
-            nextDay: '[Завтра, в] LT',
-            lastDay: '[Вчера, в] LT',
+            sameDay: '[Сегодня в] LT',
+            nextDay: '[Завтра в] LT',
+            lastDay: '[Вчера в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd, [в] LT';
+                            return '[В следующее] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd, [в] LT';
+                            return '[В следующий] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd, [в] LT';
+                            return '[В следующую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd, [в] LT';
+                            return '[В прошлое] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd, [в] LT';
+                            return '[В прошлый] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd, [в] LT';
+                            return '[В прошлую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -28755,8 +28755,7 @@ exports.default = parseFromAnchor;
 /* 229 */,
 /* 230 */,
 /* 231 */,
-/* 232 */,
-/* 233 */
+/* 232 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28896,15 +28895,42 @@ function $why(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('div', null, null,
           'class', 'row');
+        ie_void('a', null, null,
+            'name', 'about');
         ie_open('div', null, null,
-            'class', 'col-md-12 col-md-offset-2');
+            'class', 'flex-horizontal');
+          ie_open('h2', null, null,
+              'class', 'about-title');
+            itext('Improve your audit security process !');
+          ie_close('h2');
+          ie_open('img', null, null,
+              'id', 'lock',
+              'src', '../images/lock_outline.png',
+              'alt', 'lock');
+          ie_close('img');
           ie_open('h3', null, null,
               'class', 'about-title');
-            itext('Start with why');
+            itext('IvoryShield is a great tool if you run complex AWS infrastructures.');
+          ie_close('h3');
+          ie_open('h3', null, null,
+              'class', 'about-title');
+            itext('It is strongly recommanded to plan a security audit :');
           ie_close('h3');
           ie_open('p', null, null,
-              'class', 'about-description');
-            itext('Through the WHY, a story will arise, which will create trust and make an idea, a service, or a project unique. As Simon Sinek has said, having loyal users is all about attracting the people who share your fundamental beliefs. Remember: People don\'t buy what you do. They buy why you do it. I\'ll say it again: People don\'t buy what you do. They buy why you do it.');
+              'class', 'content-text');
+            itext('Periodically or when you are alerted');
+          ie_close('p');
+          ie_open('p', null, null,
+              'class', 'content-text');
+            itext('In case of staff turnover');
+          ie_close('p');
+          ie_open('p', null, null,
+              'class', 'content-text');
+            itext('If you stop using services');
+          ie_close('p');
+          ie_open('p', null, null,
+              'class', 'content-text');
+            itext('In case you change your infrastructure');
           ie_close('p');
         ie_close('div');
       ie_close('div');
@@ -28929,55 +28955,167 @@ function $features(opt_data, opt_ignored, opt_ijData) {
       'class', 'features');
     ie_open('div', null, null,
         'class', 'container');
+      ie_open('h3', null, null,
+          'class', 'ressources-title');
+        itext('Here are all the available ressources for now !');
+      ie_close('h3');
       ie_open('div', null, null,
-          'class', 'row');
-        ie_open('section', null, null,
-            'class', 'feature col-md-4 col-md-offset-2');
+          'class', 'flex-horizontal-icons');
+        ie_open('section');
           ie_open('div', null, null,
               'class', 'feature-graphic');
-            ie_void('span', null, null,
-                'class', 'icon-16-bullhorn');
+            ie_open('img', null, null,
+                'src', '../images/Compute_AmazonEC2_AMI.svg');
+            ie_close('img');
           ie_close('div');
           ie_open('h3', null, null,
               'class', 'feature-title');
-            itext('Heading');
+            itext('Amazon Machine Images');
           ie_close('h3');
-          ie_open('p', null, null,
-              'class', 'feature-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-          ie_close('p');
         ie_close('section');
-        ie_open('section', null, null,
-            'class', 'feature col-md-4');
+        ie_open('section');
           ie_open('div', null, null,
               'class', 'feature-graphic');
-            ie_void('span', null, null,
-                'class', 'icon-16-lock');
+            ie_open('img', null, null,
+                'src', '../images/Compute_AmazonEC2_instances.svg');
+            ie_close('img');
           ie_close('div');
           ie_open('h3', null, null,
               'class', 'feature-title');
-            itext('Heading');
+            itext('EC2 instances');
           ie_close('h3');
-          ie_open('p', null, null,
-              'class', 'feature-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-          ie_close('p');
         ie_close('section');
-        ie_open('section', null, null,
-            'class', 'feature col-md-4');
+        ie_open('section');
           ie_open('div', null, null,
               'class', 'feature-graphic');
-            ie_void('span', null, null,
-                'class', 'icon-16-calendar');
+            ie_open('img', null, null,
+                'src', '../images/Compute_AmazonEC2_ElasticIPaddress.svg');
+            ie_close('img');
           ie_close('div');
           ie_open('h3', null, null,
               'class', 'feature-title');
-            itext('Heading');
+            itext('Elastic IP address');
           ie_close('h3');
-          ie_open('p', null, null,
-              'class', 'feature-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo.');
-          ie_close('p');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/SecurityIdentityCompliance_IAM.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('IAM User');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/NetworkingContentDelivery_AmazonVPC_internetgateway.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Internet Gateway');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/NetworkingContentDelivery_AmazonVPC_VPCNATgateway.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('NAT Gateway');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/NetworkingContentDelivery_AmazonVPC_elasticnetworkinterface.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Network Interface');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/Storage_AmazonS3.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('S3 Bucket');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/Compute_AmazonEC2.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Security Group');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/Storage_snapshot.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Snapshot');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/Compute_AmazonVPC.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Subnet');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/Storage_volume.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Storage Volume');
+          ie_close('h3');
+        ie_close('section');
+        ie_open('section');
+          ie_open('div', null, null,
+              'class', 'feature-graphic');
+            ie_open('img', null, null,
+                'src', '../images/General_virtualprivatecloud.svg');
+            ie_close('img');
+          ie_close('div');
+          ie_open('h3', null, null,
+              'class', 'feature-title');
+            itext('Virtual Private Cloud');
+          ie_close('h3');
         ie_close('section');
       ie_close('div');
     ie_close('div');
@@ -29011,9 +29149,16 @@ function $how(opt_data, opt_ignored, opt_ijData) {
           ie_close('h3');
           ie_open('p', null, null,
               'class', 'about-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
+            itext('Check out our GitHub repo !');
           ie_close('p');
         ie_close('div');
+        ie_open('a', null, null,
+            'href', 'https://github.com/loopingz/ivoryshield');
+          ie_open('img', null, null,
+              'id', 'githubLogo',
+              'src', '../images/github.png');
+          ie_close('img');
+        ie_close('a');
       ie_close('div');
     ie_close('div');
   ie_close('article');
@@ -29171,6 +29316,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates)
 
 
 /***/ }),
+/* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
@@ -29185,9 +29331,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageIndex, templates)
 /* 245 */,
 /* 246 */,
 /* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29223,7 +29367,7 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _indexSoy = __webpack_require__(233);
+var _indexSoy = __webpack_require__(232);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -29254,4 +29398,4 @@ _metalSoy2.default.register(pageIndex, _indexSoy2.default);
 exports.default = pageIndex;
 
 /***/ })
-],[250]);
+],[248]);

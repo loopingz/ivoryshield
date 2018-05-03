@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([11,17,18,19],[
+webpackJsonppageComponent([13,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3664,7 +3664,7 @@ webpackJsonppageComponent([11,17,18,19],[
 
     addUnitAlias('date', 'D');
 
-    // PRIORITY
+    // PRIOROITY
     addUnitPriority('date', 9);
 
     // PARSING
@@ -4461,7 +4461,7 @@ webpackJsonppageComponent([11,17,18,19],[
     // Side effect imports
 
 
-    hooks.version = '2.22.1';
+    hooks.version = '2.22.0';
 
     setHookCallback(createLocal);
 
@@ -14354,28 +14354,28 @@ exports.default = ElectricSearchBase;
             LLLL : 'dddd, D MMMM YYYY г., H:mm'
         },
         calendar : {
-            sameDay: '[Сегодня, в] LT',
-            nextDay: '[Завтра, в] LT',
-            lastDay: '[Вчера, в] LT',
+            sameDay: '[Сегодня в] LT',
+            nextDay: '[Завтра в] LT',
+            lastDay: '[Вчера в] LT',
             nextWeek: function (now) {
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В следующее] dddd, [в] LT';
+                            return '[В следующее] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В следующий] dddd, [в] LT';
+                            return '[В следующий] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В следующую] dddd, [в] LT';
+                            return '[В следующую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -14383,21 +14383,21 @@ exports.default = ElectricSearchBase;
                 if (now.week() !== this.week()) {
                     switch (this.day()) {
                         case 0:
-                            return '[В прошлое] dddd, [в] LT';
+                            return '[В прошлое] dddd [в] LT';
                         case 1:
                         case 2:
                         case 4:
-                            return '[В прошлый] dddd, [в] LT';
+                            return '[В прошлый] dddd [в] LT';
                         case 3:
                         case 5:
                         case 6:
-                            return '[В прошлую] dddd, [в] LT';
+                            return '[В прошлую] dddd [в] LT';
                     }
                 } else {
                     if (this.day() === 2) {
-                        return '[Во] dddd, [в] LT';
+                        return '[Во] dddd [в] LT';
                     } else {
-                        return '[В] dddd, [в] LT';
+                        return '[В] dddd [в] LT';
                     }
                 }
             },
@@ -28747,15 +28747,12 @@ exports.default = parseFromAnchor;
 /* 221 */,
 /* 222 */,
 /* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EzcQz", function() { return EzcQz; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VnaTi", function() { return VnaTi; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28767,15 +28764,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from lorem.soy.
+// This file was automatically generated from etiam.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace EzcQz.
+ * @fileoverview Templates in namespace VnaTi.
  * @public
  */
 
-goog.module('EzcQz.incrementaldom');
+goog.module('VnaTi.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28809,19 +28806,22 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param374 = function() {
+  var param356 = function() {
     ie_open('h6');
-      var dyn32 = opt_data.page.description;
-      if (typeof dyn32 == 'function') dyn32(); else if (dyn32 != null) itext(dyn32);
+      var dyn29 = opt_data.page.description;
+      if (typeof dyn29 == 'function') dyn29(); else if (dyn29 != null) itext(dyn29);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
       ie_open('h2');
         itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
-      $templateAlias2({code: '<p>Test, test, test</p>', mode: 'xml'}, null, opt_ijData);
       ie_open('p');
-        itext('Nam eu lobortis ipsum. Sed iaculis, lectus pharetra vehicula luctus, lacus sapien malesuada lacus, non convallis dui mauris a magna. Donec accumsan mi lorem, quis mollis sem tempor vel. Fusce iaculis facilisis accumsan. Sed tempus aliquam nisi, eget commodo quam sodales ut. Duis lacus velit, fringilla congue aliquet nec, vulputate vitae nulla. Aenean ultricies risus vel sapien tincidunt, nec hendrerit purus aliquam. Quisque varius accumsan condimentum. Aliquam erat volutpat.');
+        itext('Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque varius mattis mollis. Praesent rutrum tempor libero sit amet blandit. Integer ante nisl, rutrum ut volutpat ut, rutrum id tortor. Duis placerat ut ipsum id aliquam. Nunc venenatis sem ac urna viverra, eu euismod sapien porttitor.');
+      ie_close('p');
+      $templateAlias2({code: 'body {\n    overflow: hidden;\n}', mode: 'css'}, null, opt_ijData);
+      ie_open('p');
+        itext('Nulla a suscipit nibh. Duis tincidunt elit tellus, ut volutpat lectus pharetra at. Nulla quis nisi ante. Maecenas vulputate convallis lorem. Vestibulum at ex id sapien faucibus vehicula. Sed porta dui in velit semper blandit. Ut in commodo magna. Morbi luctus enim et lectus luctus ullamcorper. Proin tellus erat, convallis vitae metus vitae, lacinia consectetur turpis.');
       ie_close('p');
       ie_open('p');
         itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
@@ -28875,11 +28875,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param374}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param356}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'EzcQz.render';
+  $render.soyTemplateName = 'VnaTi.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28889,14 +28889,17 @@ return exports;
 
 });
 
-class EzcQz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(EzcQz, templates);
+class VnaTi extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(VnaTi, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 225 */,
+/* 226 */,
+/* 227 */,
 /* 228 */,
 /* 229 */,
 /* 230 */,
@@ -28947,9 +28950,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _loremSoy = __webpack_require__(227);
+var _etiamSoy = __webpack_require__(224);
 
-var _loremSoy2 = _interopRequireDefault(_loremSoy);
+var _etiamSoy2 = _interopRequireDefault(_etiamSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28959,23 +28962,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var EzcQz = function (_Component) {
-  _inherits(EzcQz, _Component);
+var VnaTi = function (_Component) {
+  _inherits(VnaTi, _Component);
 
-  function EzcQz() {
-    _classCallCheck(this, EzcQz);
+  function VnaTi() {
+    _classCallCheck(this, VnaTi);
 
-    return _possibleConstructorReturn(this, (EzcQz.__proto__ || Object.getPrototypeOf(EzcQz)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (VnaTi.__proto__ || Object.getPrototypeOf(VnaTi)).apply(this, arguments));
   }
 
-  return EzcQz;
+  return VnaTi;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(EzcQz, _loremSoy2.default);
+_metalSoy2.default.register(VnaTi, _etiamSoy2.default);
 
-exports.default = EzcQz;
+exports.default = VnaTi;
 
 /***/ })
 ],[242]);
