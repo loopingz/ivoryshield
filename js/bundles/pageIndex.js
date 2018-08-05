@@ -28866,11 +28866,6 @@ function $header(opt_data, opt_ignored, opt_ijData) {
             'class', 'btn btn-accent');
           itext('why ?');
         ie_close('a');
-        ie_open('a', null, null,
-            'href', '#',
-            'class', 'btn btn-default');
-          itext('how ?');
-        ie_close('a');
       ie_close('div');
     ie_close('div');
   ie_close('header');
@@ -29145,18 +29140,19 @@ function $how(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-md-12 col-md-offset-2');
           ie_open('h3', null, null,
               'class', 'about-title');
-            itext('It\'s easier than you think');
+            itext('Developed by a AWS certified Solutions Architect - Professionnal');
           ie_close('h3');
           ie_open('p', null, null,
               'class', 'about-description');
-            itext('Check out our GitHub repo !');
+            itext('Here is the link to the GitHub repo !');
           ie_close('p');
         ie_close('div');
         ie_open('a', null, null,
-            'href', 'https://github.com/loopingz/ivoryshield');
+            'href', 'https://github.com/loopingz/ivoryshield',
+            'target', 'blank');
           ie_open('img', null, null,
               'id', 'githubLogo',
-              'src', '../images/github.png');
+              'src', '../images/github.svg');
           ie_close('img');
         ie_close('a');
       ie_close('div');
@@ -29187,19 +29183,19 @@ function $highlights(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-md-6 col-md-offset-2');
           ie_open('h4', null, null,
               'class', 'highlight-title');
-            itext('First highlight. It\'ll blow your mind.');
+            itext('Software architecture pattern');
           ie_close('h4');
           ie_open('p', null, null,
               'class', 'highlight-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
+            itext('Thanks to its two components, CronScanner (getting perdiodical metrics) and CloudTrail (Real-time remediation), IvoryShield aims to solve monitoring and auto-remediation of your AWS accounts.');
           ie_close('p');
         ie_close('div');
         ie_open('div', null, null,
             'class', 'col-md-5 col-md-offset-1');
           ie_open('img', null, null,
               'class', 'highlight-image',
-              'src', 'http://placehold.it/500x400/e7e8e8/64696d',
-              'alt', 'Placeholder');
+              'src', '../images/architecture.png',
+              'alt', 'IvoryShield global architecture');
           ie_close('img');
         ie_close('div');
       ie_close('section');
@@ -29209,41 +29205,19 @@ function $highlights(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-md-6 col-md-push-9');
           ie_open('h4', null, null,
               'class', 'highlight-title');
-            itext('It\'s that good. See for yourself.');
+            itext('Typical use case deployment');
           ie_close('h4');
           ie_open('p', null, null,
               'class', 'highlight-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
+            itext('Check out all the available ressources for now, configure your event monitoring params, and let IvoryShield configure your AWS account and launch on Fargate both components.');
           ie_close('p');
         ie_close('div');
         ie_open('div', null, null,
             'class', 'col-md-5 col-md-offset-2 col-md-pull-6');
           ie_open('img', null, null,
               'class', 'highlight-image',
-              'src', 'http://placehold.it/500x400/e7e8e8/64696d',
-              'alt', 'Placeholder');
-          ie_close('img');
-        ie_close('div');
-      ie_close('section');
-      ie_open('section', null, null,
-          'class', 'highlight row');
-        ie_open('div', null, null,
-            'class', 'col-md-6 col-md-offset-2');
-          ie_open('h4', null, null,
-              'class', 'highlight-title');
-            itext('And lastly, this one. Checkmate.');
-          ie_close('h4');
-          ie_open('p', null, null,
-              'class', 'highlight-description');
-            itext('Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.');
-          ie_close('p');
-        ie_close('div');
-        ie_open('div', null, null,
-            'class', 'col-md-5 col-md-offset-1');
-          ie_open('img', null, null,
-              'class', 'highlight-image',
-              'src', 'http://placehold.it/500x400/e7e8e8/64696d',
-              'alt', 'Placeholder');
+              'src', '../images/deployment.png',
+              'alt', 'IvoryShield deployment');
           ie_close('img');
         ie_close('div');
       ie_close('section');
@@ -29272,12 +29246,30 @@ function $footer(opt_data, opt_ignored, opt_ijData) {
           'class', 'column');
         ie_open('p', null, null,
             'class', 'footer-description');
+          itext('Powered by ');
+          ie_open('a', null, null,
+              'href', 'http://www.wedeploy.com');
+            itext('WeDeploy');
+          ie_close('a');
+          itext(' ');
+          ie_open('br');
+          ie_close('br');
+          ie_open('br');
+          ie_close('br');
           itext('Copyright \u00A9 2018');
         ie_close('p');
+        ie_open('a', null, null,
+            'href', 'https://www.nuxeo.com/',
+            'target', 'blank');
+          ie_void('img', null, null,
+              'id', 'logoNuxeo',
+              'src', '../images/nuxeo.png');
+        ie_close('a');
         ie_open('a', null, null,
             'href', 'https://www.loopingz.com/',
             'target', 'blank');
           ie_void('img', null, null,
+              'id', 'logoLoopingz',
               'src', '../images/logo-white.png');
         ie_close('a');
       ie_close('div');
