@@ -30,7 +30,7 @@ description: "The best way to audit and secure your AWS environnement."
 	<header class="header">
 		<div class="container">
 			<h1 class="header-title">{$site.title}</h1>
-      <img src="{$site.logo}"></img>
+      <img id="headerLogo" src="{$site.logo}"></img>
 			<h2 class="header-subtitle">{$site.index.description}</h2>
 			<div class="header-cta">
 				<a href="#about" class="btn btn-accent">why ?</a>
@@ -158,7 +158,7 @@ description: "The best way to audit and secure your AWS environnement."
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-md-offset-2">
-					<h3 class="about-title">Developed by a AWS certified Solutions Architect - Professionnal</h3>
+					<h3 class="about-title">Developed by an AWS certified Solutions Architect - Professionnal</h3>
 					<p class="about-description">Here is the link to the GitHub repo !</p>
         </div>
         <a href="https://github.com/loopingz/ivoryshield" target="blank">
@@ -176,8 +176,8 @@ description: "The best way to audit and secure your AWS environnement."
 		<div class="container">
 			<section class="highlight row">
 				<div class="col-md-6 col-md-offset-2">
-					<h4 class="highlight-title">Software architecture pattern</h4>
-					<p class="highlight-description">Thanks to its two components, CronScanner (getting perdiodical metrics) and CloudTrail (Real-time remediation), IvoryShield aims to solve monitoring and auto-remediation of your AWS accounts.</p>
+					<h4 class="highlight-title">Software architecture</h4>
+					<p class="highlight-description">Thanks to its two components, CronScanner (periodical checks) and CloudTrail (real-time remediation), IvoryShield aims to solve monitoring and auto-remediation of your AWS accounts.</p>
 				</div>
 				<div class="col-md-5 col-md-offset-1">
 					<img class="highlight-image" src="../images/architecture.png" alt="IvoryShield global architecture">
@@ -201,17 +201,26 @@ description: "The best way to audit and secure your AWS environnement."
 {template .footer}
 	<footer class="footer">
 		<div class="container">
-			<div class="column">
+			<div class="flex-horizontal-footer">
         <p class="footer-description">
-          Powered by <a href="http://www.wedeploy.com">WeDeploy</a> <br /><br />
 					Copyright © 2018
 				</p>
-        <a href="https://www.nuxeo.com/" target="blank">
-          <img id="logoNuxeo" src="../images/nuxeo.png"></img>
-        </a>
-        <a href="https://www.loopingz.com/" target="blank">
-          <img id="logoLoopingz" src="../images/logo-white.png"></img>
-        </a>
+        <div>
+          <p class="footer-description">
+  					Sponsored by
+  				</p>
+          <div>
+            <a href="https://www.nuxeo.com/" target="blank">
+              <img id="logoNuxeo" src="../images/nuxeo.png"></img>
+            </a>
+            <a href="https://www.loopingz.com/" target="blank">
+              <img id="logoLoopingz" src="../images/logo-white.png"></img>
+            </a>
+          </div>
+        </div>
+        <p class="footer-description">
+          Powered by <a href="http://www.wedeploy.com">WeDeploy</a> <br /><br />
+        </p>
 			</div>
 		</div>
 	</footer>
