@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,16,17,18],[
+webpackJsonppageComponent([4,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19552,13 +19552,10 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Topbar.incrementaldom', 'render');
-
 
 /**
  * @param {{
  *    content: (?),
- *    site: (?),
  *    elementClasses: (?)
  * }} opt_data
  * @param {(null|undefined)=} opt_ignored
@@ -19572,7 +19569,6 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-house'}}, null, opt_ijData);
       var dyn9 = opt_data.content;
       if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
@@ -19583,8 +19579,8 @@ if (goog.DEBUG) {
   $render.soyTemplateName = 'main.render';
 }
 
-exports.render.params = ["content","site","elementClasses"];
-exports.render.types = {"content":"?","site":"?","elementClasses":"?"};
+exports.render.params = ["content","elementClasses"];
+exports.render.types = {"content":"?","elementClasses":"?"};
 templates = exports;
 return exports;
 
@@ -19739,12 +19735,12 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy110 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy110.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy115 = tutorialObject__soy110.children[tutorialObject__soy110.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy115,
             'class', 'btn btn-accent btn-sm');
           var dyn12 = opt_data.page.buttonTitle;
           if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
@@ -19792,7 +19788,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s130_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19813,11 +19809,11 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s130_88c0813b = __deltemplate_s130_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s130_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s130_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s130_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -20137,7 +20133,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s185_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -20151,11 +20147,11 @@ function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s189_d34389eb = __deltemplate_s189_d34389eb;
+exports.__deltemplate_s185_d34389eb = __deltemplate_s185_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s189_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s189_d34389eb';
+  __deltemplate_s185_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s185_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s189_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s185_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -28756,14 +28752,12 @@ exports.default = parseFromAnchor;
 /* 230 */,
 /* 231 */,
 /* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KspsL", function() { return KspsL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XrTwZ", function() { return XrTwZ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28775,15 +28769,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from second-step.soy.
+// This file was automatically generated from first-step.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace KspsL.
+ * @fileoverview Templates in namespace XrTwZ.
  * @public
  */
 
-goog.module('KspsL.incrementaldom');
+goog.module('XrTwZ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28817,10 +28811,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param477 = function() {
+  var param452 = function() {
     ie_open('h2');
-      var dyn36 = opt_data.page.title;
-      if (typeof dyn36 == 'function') dyn36(); else if (dyn36 != null) itext(dyn36);
+      var dyn35 = opt_data.page.title;
+      if (typeof dyn35 == 'function') dyn35(); else if (dyn35 != null) itext(dyn35);
     ie_close('h2');
     $templateAlias2({code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
     ie_open('p');
@@ -28838,11 +28832,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param477}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param452}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'KspsL.render';
+  $render.soyTemplateName = 'XrTwZ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28852,14 +28846,16 @@ return exports;
 
 });
 
-class KspsL extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KspsL, templates);
+class XrTwZ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XrTwZ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 234 */,
+/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28909,9 +28905,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _secondStepSoy = __webpack_require__(235);
+var _firstStepSoy = __webpack_require__(233);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28921,23 +28917,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var KspsL = function (_Component) {
-  _inherits(KspsL, _Component);
+var XrTwZ = function (_Component) {
+  _inherits(XrTwZ, _Component);
 
-  function KspsL() {
-    _classCallCheck(this, KspsL);
+  function XrTwZ() {
+    _classCallCheck(this, XrTwZ);
 
-    return _possibleConstructorReturn(this, (KspsL.__proto__ || Object.getPrototypeOf(KspsL)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (XrTwZ.__proto__ || Object.getPrototypeOf(XrTwZ)).apply(this, arguments));
   }
 
-  return KspsL;
+  return XrTwZ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(KspsL, _secondStepSoy2.default);
+_metalSoy2.default.register(XrTwZ, _firstStepSoy2.default);
 
-exports.default = KspsL;
+exports.default = XrTwZ;
 
 /***/ })
 ],[249]);

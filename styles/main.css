@@ -12139,9 +12139,15 @@ li a:not([class]) {
 
 .flex-horizontal-icons {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.flex-horizontal-footer {
+  display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: space-between; }
 
 .flex-horizontal-icons section {
   display: flex;
@@ -12175,3 +12181,7 @@ li a:not([class]) {
 #githubLogo {
   width: 200px;
   height: 200px; }
+
+#headerLogo {
+  margin-top: 50px;
+  margin-bottom: 30px; }

@@ -19552,13 +19552,10 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Topbar.incrementaldom', 'render');
-
 
 /**
  * @param {{
  *    content: (?),
- *    site: (?),
  *    elementClasses: (?)
  * }} opt_data
  * @param {(null|undefined)=} opt_ignored
@@ -19572,7 +19569,6 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-house'}}, null, opt_ijData);
       var dyn9 = opt_data.content;
       if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
@@ -19583,8 +19579,8 @@ if (goog.DEBUG) {
   $render.soyTemplateName = 'main.render';
 }
 
-exports.render.params = ["content","site","elementClasses"];
-exports.render.types = {"content":"?","site":"?","elementClasses":"?"};
+exports.render.params = ["content","elementClasses"];
+exports.render.types = {"content":"?","elementClasses":"?"};
 templates = exports;
 return exports;
 
@@ -19739,12 +19735,12 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy110 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy110.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy115 = tutorialObject__soy110.children[tutorialObject__soy110.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy115,
             'class', 'btn btn-accent btn-sm');
           var dyn12 = opt_data.page.buttonTitle;
           if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
@@ -19792,7 +19788,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s130_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19813,11 +19809,11 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s130_88c0813b = __deltemplate_s130_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s130_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s130_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s130_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -20137,7 +20133,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s185_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -20151,11 +20147,11 @@ function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s189_d34389eb = __deltemplate_s189_d34389eb;
+exports.__deltemplate_s185_d34389eb = __deltemplate_s185_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s189_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s189_d34389eb';
+  __deltemplate_s185_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s185_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s189_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s185_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -28805,13 +28801,13 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param227 = function() {
+  var param223 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $allPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param227}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param223}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -28833,34 +28829,34 @@ function $allPosts(opt_data, opt_ignored, opt_ijData) {
       'class', 'posts-list posts-list-all');
     ie_open('div', null, null,
         'class', 'container');
-      var childIdList246 = opt_data.site.index.children['blog'].childIds;
-      var childIdListLen246 = childIdList246.length;
-      for (var childIdIndex246 = 0; childIdIndex246 < childIdListLen246; childIdIndex246++) {
-        var childIdData246 = childIdList246[childIdIndex246];
-        var childPage__soy234 = opt_data.site.index.children['blog'].children[childIdData246];
+      var childIdList242 = opt_data.site.index.children['blog'].childIds;
+      var childIdListLen242 = childIdList242.length;
+      for (var childIdIndex242 = 0; childIdIndex242 < childIdListLen242; childIdIndex242++) {
+        var childIdData242 = childIdList242[childIdIndex242];
+        var childPage__soy230 = opt_data.site.index.children['blog'].children[childIdData242];
         ie_open('article', null, null,
             'class', 'post-item container-blog');
           ie_open('a', null, null,
               'class', 'post-item__link',
-              'href', childPage__soy234.url);
+              'href', childPage__soy230.url);
             ie_open('small');
               itext('By ');
-              var dyn19 = childPage__soy234.author;
+              var dyn19 = childPage__soy230.author;
               if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
               itext(' ');
               ie_open('span');
                 itext('| ');
-                var dyn20 = childPage__soy234.date;
+                var dyn20 = childPage__soy230.date;
                 if (typeof dyn20 == 'function') dyn20(); else if (dyn20 != null) itext(dyn20);
               ie_close('span');
             ie_close('small');
             ie_open('h4', null, null,
                 'class', 'post-item__title');
-              var dyn21 = childPage__soy234.title;
+              var dyn21 = childPage__soy230.title;
               if (typeof dyn21 == 'function') dyn21(); else if (dyn21 != null) itext(dyn21);
             ie_close('h4');
             ie_open('p');
-              var dyn22 = childPage__soy234.description;
+              var dyn22 = childPage__soy230.description;
               if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
             ie_close('p');
           ie_close('a');
@@ -28906,7 +28902,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageBlogIndex, templa
 /* 235 */,
 /* 236 */,
 /* 237 */,
-/* 238 */
+/* 238 */,
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28973,4 +28970,4 @@ _metalSoy2.default.register(pageBlogIndex, _indexSoy2.default);
 exports.default = pageBlogIndex;
 
 /***/ })
-],[238]);
+],[239]);

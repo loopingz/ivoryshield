@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,16,17,18],[
+webpackJsonppageComponent([14,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19552,13 +19552,10 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Topbar.incrementaldom', 'render');
-
 
 /**
  * @param {{
  *    content: (?),
- *    site: (?),
  *    elementClasses: (?)
  * }} opt_data
  * @param {(null|undefined)=} opt_ignored
@@ -19572,7 +19569,6 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-house'}}, null, opt_ijData);
       var dyn9 = opt_data.content;
       if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
@@ -19583,8 +19579,8 @@ if (goog.DEBUG) {
   $render.soyTemplateName = 'main.render';
 }
 
-exports.render.params = ["content","site","elementClasses"];
-exports.render.types = {"content":"?","site":"?","elementClasses":"?"};
+exports.render.params = ["content","elementClasses"];
+exports.render.types = {"content":"?","elementClasses":"?"};
 templates = exports;
 return exports;
 
@@ -19739,12 +19735,12 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy110 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy110.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy115 = tutorialObject__soy110.children[tutorialObject__soy110.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy115,
             'class', 'btn btn-accent btn-sm');
           var dyn12 = opt_data.page.buttonTitle;
           if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
@@ -19792,7 +19788,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s130_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19813,11 +19809,11 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s130_88c0813b = __deltemplate_s130_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s130_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s130_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s130_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -20137,7 +20133,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s185_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -20151,11 +20147,11 @@ function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s189_d34389eb = __deltemplate_s189_d34389eb;
+exports.__deltemplate_s185_d34389eb = __deltemplate_s185_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s189_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s189_d34389eb';
+  __deltemplate_s185_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s185_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s189_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s185_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -28746,22 +28742,12 @@ exports.default = parseFromAnchor;
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */
+/* 223 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mnQnV", function() { return mnQnV; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KoOBp", function() { return KoOBp; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28773,15 +28759,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from first-step.soy.
+// This file was automatically generated from markdown-post.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace mnQnV.
+ * @fileoverview Templates in namespace KoOBp.
  * @public
  */
 
-goog.module('mnQnV.incrementaldom');
+goog.module('KoOBp.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28804,7 +28790,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
 
 
 /**
@@ -28815,18 +28801,91 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param456 = function() {
-    ie_open('h2');
-      var dyn35 = opt_data.page.title;
-      if (typeof dyn35 == 'function') dyn35(); else if (dyn35 != null) itext(dyn35);
-    ie_close('h2');
-    $templateAlias2({code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
-    ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-    ie_close('p');
-    ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-    ie_close('p');
+  var param247 = function() {
+    ie_open('article');
+      ie_open('p');
+        var dyn23 = opt_data.page.description;
+        if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
+      ie_close('p');
+      ie_open('h2');
+        itext('IvoryShield');
+      ie_close('h2');
+      ie_open('p', null, null,
+          'align', 'center');
+        ie_open('img', null, null,
+            'src', '/images/ivoryShield.png',
+            'alt', 'IvoryShield logo');
+        ie_close('img');
+      ie_close('p');
+      ie_open('p');
+        itext('This project aims to solve monitoring and auto-remediation of your AWS accounts, with a reasonable budget');
+      ie_close('p');
+      ie_open('p');
+        itext('It have two components :');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          itext('A CronScanner to get metrics periodically');
+        ie_close('li');
+        ie_open('li');
+          itext('A CloudTrail parser to remediate in real time');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('p');
+        itext('Both CloudTrail and CronScanner map AWS Resources to an object, and then use defined Validators.');
+      ie_close('p');
+      ie_open('p');
+        itext('It will configure your AWS accounts, and launch on Fargate both components');
+      ie_close('p');
+      ie_open('h3');
+        itext('Software architecture :');
+      ie_close('h3');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '/images/architecture.png',
+            'width', '500',
+            'height', 'auto',
+            'alt', 'Software architecture');
+        ie_close('img');
+      ie_close('p');
+      ie_open('h3');
+        itext('Typical deployment :');
+      ie_close('h3');
+      ie_open('p');
+        ie_open('img', null, null,
+            'src', '/images/deployment.png',
+            'width', '500',
+            'height', 'auto',
+            'alt', 'Typical deployment');
+        ie_close('img');
+      ie_close('p');
+      ie_open('h3');
+        itext('Configurer');
+      ie_close('h3');
+      ie_open('p');
+        itext('A configurer allow you to launch the take action on every account and every region');
+      ie_close('p');
+      $templateAlias2({code: 'class Configurer {\n   isEnableOn(account, region) {\n       // Use this method to filter by region or account\n      return true;\n   }\n}', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        itext('A Validator is a simple Service :');
+      ie_close('p');
+      $templateAlias2({code: 'const Validator = require(\'./validator\');\n\nmodule.exports = class IAMValidator extends Validator {\n\n   isEnableOn(account, region) {\n       // Use this method to filter by region or account\n      return true;\n   }\n\n  validate(aws, resource) {\n     let metrics = {};\n     // Add your own logic here\n\n     return Promise.resolve(metrics);\n  }\n}', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        itext('A TaggingValidator example will look like :');
+      ie_close('p');
+      $templateAlias2({code: 'const Validator = require(\'./validator\');\n\nmodule.exports = class TaggingValidator extends Validator {\n  validate(aws, resource) {\n    let metrics = {};\n    let promise = Promise.resolve();\n    let error = \'\';\n    if (!resource.canTag()) {\n      return Promise.resolve(metrics);\n    }\n    // Make billing-category and billing-subcategory mandatory\n    if (!resource.getTag(\'billing-category\') || !resource.getTag(\'billing-subcategory\')) {\n      metrics[\'InvalidTags\'] = 1;\n      error = \'Required tags are billing-category billing-subcategory\';\n    }\n    // Forbid usage of customer for billing-subcategory\n    if (resource.getTag(\'billing-subcategory\') === \'customer\' && !metrics[\'InvalidTags\']) {\n      metrics[\'InvalidTags\'] = 1;\n      error = \'Tag billing-subcategory cannot be customer\';\n    }\n    // Ensure billing-category is one of 5\n    if ([\'customers\',\'internal\',\'presales\',\'build\', \'infra\'].indexOf(resource.getTag(\'billing-category\')) < 0 && !metrics[\'InvalidTags\']) {\n      metrics[\'InvalidTags\'] = 1;\n      error = \'Tag billing-category must be one of customers internal presales build\';\n    }\n    // Get metrics for badly tag EC2Instance\n    if (resource.constructor.name === \'EC2Instance\' && metrics[\'InvalidTags\']) {\n      metrics[\'EC2InstanceInvalidTags\'] = 1;\n    }\n    // Get metrics for badly tag S3Bucekt\n    if (resource.constructor.name === \'S3Bucket\' && metrics[\'InvalidTags\']) {\n      metrics[\'S3BucketInvalidTags\'] = 1;\n    }\n    // Tag resource with policy:tags-policy-error resource badly tagged\n    if (metrics[\'InvalidTags\'] && resource.getTag(\'policy:tags-policy-error\') !== error) {\n      promise = promise.then( () => {\n        return resource.tag({\'policy:tags-policy-error\': error});\n      });\n    }\n    // Remove Tag from resource newly compliant\n    if (!metrics[\'InvalidTags\'] && resource.getTag(\'policy:tags-policy-error\')) {\n      promise = promise.then( () => {\n        return resource.untag({\'policy:tags-policy-error\': resource.getTag(\'policy:tags-policy-error\')});\n      });\n    }\n    return promise.then( () => {\n      return Promise.resolve(metrics);\n    });\n  }\n}', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        itext('Resources available for now :');
+      ie_close('p');
+      $templateAlias2({code: 'AMI\nEC2Instance\nEIP\nIAMUser\nInternetGateway\nNatGateway\nNetworkInterface\nS3Bucket\nSecurityGroup\nSnapshot\nSubnet\nVolume\nVPC', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        itext('Resource also defined which CloudTrail event require reevaluations of this resource :');
+      ie_close('p');
+      $templateAlias2({code: 'const Resource = require(\'./Resource\');\n\nmodule.exports = class S3Bucket extends Resource {\n\n  static getEventMapper() {\n    return {\n      \'PutBucket.*\': \'requestParameters.bucketName\',\n      \'CreateBucket\': \'requestParameters.bucketName\'\n    }\n  }\n  ...\n}', mode: 'text'}, null, opt_ijData);
+      ie_open('p');
+        itext('The event mapper key is a RegExp to determine which type of event should generate Resource evaluation, the event mapper value represent the JSON Path to the resource id on the target event.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -28836,11 +28895,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param456}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param247}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'mnQnV.render';
+  $render.soyTemplateName = 'KoOBp.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28850,31 +28909,29 @@ return exports;
 
 });
 
-class mnQnV extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(mnQnV, templates);
+class KoOBp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KoOBp, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
 /* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28910,9 +28967,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _firstStepSoy = __webpack_require__(233);
+var _markdownPostSoy = __webpack_require__(223);
 
-var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
+var _markdownPostSoy2 = _interopRequireDefault(_markdownPostSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28922,23 +28979,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var mnQnV = function (_Component) {
-  _inherits(mnQnV, _Component);
+var KoOBp = function (_Component) {
+  _inherits(KoOBp, _Component);
 
-  function mnQnV() {
-    _classCallCheck(this, mnQnV);
+  function KoOBp() {
+    _classCallCheck(this, KoOBp);
 
-    return _possibleConstructorReturn(this, (mnQnV.__proto__ || Object.getPrototypeOf(mnQnV)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (KoOBp.__proto__ || Object.getPrototypeOf(KoOBp)).apply(this, arguments));
   }
 
-  return mnQnV;
+  return KoOBp;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(mnQnV, _firstStepSoy2.default);
+_metalSoy2.default.register(KoOBp, _markdownPostSoy2.default);
 
-exports.default = mnQnV;
+exports.default = KoOBp;
 
 /***/ })
-],[250]);
+],[238]);

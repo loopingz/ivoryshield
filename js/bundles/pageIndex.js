@@ -19552,13 +19552,10 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('Topbar.incrementaldom', 'render');
-
 
 /**
  * @param {{
  *    content: (?),
- *    site: (?),
  *    elementClasses: (?)
  * }} opt_data
  * @param {(null|undefined)=} opt_ignored
@@ -19572,7 +19569,6 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.title, icon: 'icon-16-house'}}, null, opt_ijData);
       var dyn9 = opt_data.content;
       if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
@@ -19583,8 +19579,8 @@ if (goog.DEBUG) {
   $render.soyTemplateName = 'main.render';
 }
 
-exports.render.params = ["content","site","elementClasses"];
-exports.render.types = {"content":"?","site":"?","elementClasses":"?"};
+exports.render.params = ["content","elementClasses"];
+exports.render.types = {"content":"?","elementClasses":"?"};
 templates = exports;
 return exports;
 
@@ -19739,12 +19735,12 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy114 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy114.childIds.length) {
+    var tutorialObject__soy110 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy110.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy119 = tutorialObject__soy114.children[tutorialObject__soy114.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy115 = tutorialObject__soy110.children[tutorialObject__soy110.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy119,
+            'href', nextPageUrl__soy115,
             'class', 'btn btn-accent btn-sm');
           var dyn12 = opt_data.page.buttonTitle;
           if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
@@ -19792,7 +19788,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s130_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -19813,11 +19809,11 @@ function __deltemplate_s134_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s134_88c0813b = __deltemplate_s134_88c0813b;
+exports.__deltemplate_s130_88c0813b = __deltemplate_s130_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s134_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s134_88c0813b';
+  __deltemplate_s130_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s130_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s134_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s130_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -20137,7 +20133,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s185_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -20151,11 +20147,11 @@ function __deltemplate_s189_d34389eb(opt_data, opt_ignored, opt_ijData) {
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s189_d34389eb = __deltemplate_s189_d34389eb;
+exports.__deltemplate_s185_d34389eb = __deltemplate_s185_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s189_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s189_d34389eb';
+  __deltemplate_s185_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s185_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s189_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s185_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -28817,7 +28813,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param148 = function() {
+  var param144 = function() {
     $header(opt_data, null, opt_ijData);
     $why(null, null, opt_ijData);
     $features(null, null, opt_ijData);
@@ -28825,7 +28821,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     $highlights(null, null, opt_ijData);
     $footer(null, null, opt_ijData);
   };
-  $templateAlias1(soy.$$assignDefaults({content: param148}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param144}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -28853,6 +28849,7 @@ function $header(opt_data, opt_ignored, opt_ijData) {
         if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
       ie_close('h1');
       ie_void('img', null, null,
+          'id', 'headerLogo',
           'src', opt_data.site.logo);
       ie_open('h2', null, null,
           'class', 'header-subtitle');
@@ -29140,7 +29137,7 @@ function $how(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-md-12 col-md-offset-2');
           ie_open('h3', null, null,
               'class', 'about-title');
-            itext('Developed by a AWS certified Solutions Architect - Professionnal');
+            itext('Developed by an AWS certified Solutions Architect - Professionnal');
           ie_close('h3');
           ie_open('p', null, null,
               'class', 'about-description');
@@ -29183,11 +29180,11 @@ function $highlights(opt_data, opt_ignored, opt_ijData) {
             'class', 'col-md-6 col-md-offset-2');
           ie_open('h4', null, null,
               'class', 'highlight-title');
-            itext('Software architecture pattern');
+            itext('Software architecture');
           ie_close('h4');
           ie_open('p', null, null,
               'class', 'highlight-description');
-            itext('Thanks to its two components, CronScanner (getting perdiodical metrics) and CloudTrail (Real-time remediation), IvoryShield aims to solve monitoring and auto-remediation of your AWS accounts.');
+            itext('Thanks to its two components, CronScanner (periodical checks) and CloudTrail (real-time remediation), IvoryShield aims to solve monitoring and auto-remediation of your AWS accounts.');
           ie_close('p');
         ie_close('div');
         ie_open('div', null, null,
@@ -29243,7 +29240,33 @@ function $footer(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       ie_open('div', null, null,
-          'class', 'column');
+          'class', 'flex-horizontal-footer');
+        ie_open('p', null, null,
+            'class', 'footer-description');
+          itext('Copyright \u00A9 2018');
+        ie_close('p');
+        ie_open('div');
+          ie_open('p', null, null,
+              'class', 'footer-description');
+            itext('Sponsored by');
+          ie_close('p');
+          ie_open('div');
+            ie_open('a', null, null,
+                'href', 'https://www.nuxeo.com/',
+                'target', 'blank');
+              ie_void('img', null, null,
+                  'id', 'logoNuxeo',
+                  'src', '../images/nuxeo.png');
+            ie_close('a');
+            ie_open('a', null, null,
+                'href', 'https://www.loopingz.com/',
+                'target', 'blank');
+              ie_void('img', null, null,
+                  'id', 'logoLoopingz',
+                  'src', '../images/logo-white.png');
+            ie_close('a');
+          ie_close('div');
+        ie_close('div');
         ie_open('p', null, null,
             'class', 'footer-description');
           itext('Powered by ');
@@ -29256,22 +29279,7 @@ function $footer(opt_data, opt_ignored, opt_ijData) {
           ie_close('br');
           ie_open('br');
           ie_close('br');
-          itext('Copyright \u00A9 2018');
         ie_close('p');
-        ie_open('a', null, null,
-            'href', 'https://www.nuxeo.com/',
-            'target', 'blank');
-          ie_void('img', null, null,
-              'id', 'logoNuxeo',
-              'src', '../images/nuxeo.png');
-        ie_close('a');
-        ie_open('a', null, null,
-            'href', 'https://www.loopingz.com/',
-            'target', 'blank');
-          ie_void('img', null, null,
-              'id', 'logoLoopingz',
-              'src', '../images/logo-white.png');
-        ie_close('a');
       ie_close('div');
     ie_close('div');
   ie_close('footer');
