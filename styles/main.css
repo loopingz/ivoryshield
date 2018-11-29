@@ -12129,7 +12129,8 @@ li a:not([class]) {
 #githubLogo {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .flex-horizontal {
   display: flex;
@@ -12185,3 +12186,11 @@ li a:not([class]) {
 #headerLogo {
   margin-top: 50px;
   margin-bottom: 30px; }
+
+#contactUs {
+  font-size: 2em;
+  color: #366395;
+  margin-bottom: 100px; }
+
+#contactUs a {
+  color: white; }

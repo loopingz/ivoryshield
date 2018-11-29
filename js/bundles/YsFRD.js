@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([14,16,17,18],[
+webpackJsonppageComponent([13,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28742,12 +28742,13 @@ exports.default = parseFromAnchor;
 /* 220 */,
 /* 221 */,
 /* 222 */,
-/* 223 */
+/* 223 */,
+/* 224 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KoOBp", function() { return KoOBp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YsFRD", function() { return YsFRD; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28759,15 +28760,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from markdown-post.soy.
+// This file was automatically generated from etiam.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace KoOBp.
+ * @fileoverview Templates in namespace YsFRD.
  * @public
  */
 
-goog.module('KoOBp.incrementaldom');
+goog.module('YsFRD.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28790,7 +28791,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('blog.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -28801,89 +28802,64 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param247 = function() {
-    ie_open('article');
-      ie_open('p');
-        var dyn23 = opt_data.page.description;
-        if (typeof dyn23 == 'function') dyn23(); else if (dyn23 != null) itext(dyn23);
-      ie_close('p');
+  var param352 = function() {
+    ie_open('h6');
+      var dyn29 = opt_data.page.description;
+      if (typeof dyn29 == 'function') dyn29(); else if (dyn29 != null) itext(dyn29);
+    ie_close('h6');
+    ie_open('article', null, null,
+        'id', '1');
       ie_open('h2');
-        itext('IvoryShield');
+        itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
-      ie_open('p', null, null,
-          'align', 'center');
-        ie_open('img', null, null,
-            'src', '/images/ivoryShield.png',
-            'alt', 'IvoryShield logo');
-        ie_close('img');
+      ie_open('p');
+        itext('Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque varius mattis mollis. Praesent rutrum tempor libero sit amet blandit. Integer ante nisl, rutrum ut volutpat ut, rutrum id tortor. Duis placerat ut ipsum id aliquam. Nunc venenatis sem ac urna viverra, eu euismod sapien porttitor.');
+      ie_close('p');
+      $templateAlias2({code: 'body {\n    overflow: hidden;\n}', mode: 'css'}, null, opt_ijData);
+      ie_open('p');
+        itext('Nulla a suscipit nibh. Duis tincidunt elit tellus, ut volutpat lectus pharetra at. Nulla quis nisi ante. Maecenas vulputate convallis lorem. Vestibulum at ex id sapien faucibus vehicula. Sed porta dui in velit semper blandit. Ut in commodo magna. Morbi luctus enim et lectus luctus ullamcorper. Proin tellus erat, convallis vitae metus vitae, lacinia consectetur turpis.');
       ie_close('p');
       ie_open('p');
-        itext('This project aims to solve monitoring and auto-remediation of your AWS accounts, with a reasonable budget');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
       ie_open('p');
-        itext('It have two components :');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_open('ul');
-        ie_open('li');
-          itext('A CronScanner to get metrics periodically');
-        ie_close('li');
-        ie_open('li');
-          itext('A CloudTrail parser to remediate in real time');
-        ie_close('li');
-      ie_close('ul');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '2');
+      ie_open('h2');
+        itext('Lorem ipsum dolor sit amet');
+      ie_close('h2');
       ie_open('p');
-        itext('Both CloudTrail and CronScanner map AWS Resources to an object, and then use defined Validators.');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
       ie_open('p');
-        itext('It will configure your AWS accounts, and launch on Fargate both components');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_open('h3');
-        itext('Software architecture :');
-      ie_close('h3');
       ie_open('p');
-        ie_open('img', null, null,
-            'src', '/images/architecture.png',
-            'width', '500',
-            'height', 'auto',
-            'alt', 'Software architecture');
-        ie_close('img');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_open('h3');
-        itext('Typical deployment :');
-      ie_close('h3');
       ie_open('p');
-        ie_open('img', null, null,
-            'src', '/images/deployment.png',
-            'width', '500',
-            'height', 'auto',
-            'alt', 'Typical deployment');
-        ie_close('img');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      ie_open('h3');
-        itext('Configurer');
-      ie_close('h3');
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', '3');
+      ie_open('h2');
+        itext('Lorem ipsum dolor sit amet');
+      ie_close('h2');
       ie_open('p');
-        itext('A configurer allow you to launch the take action on every account and every region');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      $templateAlias2({code: 'class Configurer {\n   isEnableOn(account, region) {\n       // Use this method to filter by region or account\n      return true;\n   }\n}', mode: 'text'}, null, opt_ijData);
       ie_open('p');
-        itext('A Validator is a simple Service :');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      $templateAlias2({code: 'const Validator = require(\'./validator\');\n\nmodule.exports = class IAMValidator extends Validator {\n\n   isEnableOn(account, region) {\n       // Use this method to filter by region or account\n      return true;\n   }\n\n  validate(aws, resource) {\n     let metrics = {};\n     // Add your own logic here\n\n     return Promise.resolve(metrics);\n  }\n}', mode: 'text'}, null, opt_ijData);
       ie_open('p');
-        itext('A TaggingValidator example will look like :');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      $templateAlias2({code: 'const Validator = require(\'./validator\');\n\nmodule.exports = class TaggingValidator extends Validator {\n  validate(aws, resource) {\n    let metrics = {};\n    let promise = Promise.resolve();\n    let error = \'\';\n    if (!resource.canTag()) {\n      return Promise.resolve(metrics);\n    }\n    // Make billing-category and billing-subcategory mandatory\n    if (!resource.getTag(\'billing-category\') || !resource.getTag(\'billing-subcategory\')) {\n      metrics[\'InvalidTags\'] = 1;\n      error = \'Required tags are billing-category billing-subcategory\';\n    }\n    // Forbid usage of customer for billing-subcategory\n    if (resource.getTag(\'billing-subcategory\') === \'customer\' && !metrics[\'InvalidTags\']) {\n      metrics[\'InvalidTags\'] = 1;\n      error = \'Tag billing-subcategory cannot be customer\';\n    }\n    // Ensure billing-category is one of 5\n    if ([\'customers\',\'internal\',\'presales\',\'build\', \'infra\'].indexOf(resource.getTag(\'billing-category\')) < 0 && !metrics[\'InvalidTags\']) {\n      metrics[\'InvalidTags\'] = 1;\n      error = \'Tag billing-category must be one of customers internal presales build\';\n    }\n    // Get metrics for badly tag EC2Instance\n    if (resource.constructor.name === \'EC2Instance\' && metrics[\'InvalidTags\']) {\n      metrics[\'EC2InstanceInvalidTags\'] = 1;\n    }\n    // Get metrics for badly tag S3Bucekt\n    if (resource.constructor.name === \'S3Bucket\' && metrics[\'InvalidTags\']) {\n      metrics[\'S3BucketInvalidTags\'] = 1;\n    }\n    // Tag resource with policy:tags-policy-error resource badly tagged\n    if (metrics[\'InvalidTags\'] && resource.getTag(\'policy:tags-policy-error\') !== error) {\n      promise = promise.then( () => {\n        return resource.tag({\'policy:tags-policy-error\': error});\n      });\n    }\n    // Remove Tag from resource newly compliant\n    if (!metrics[\'InvalidTags\'] && resource.getTag(\'policy:tags-policy-error\')) {\n      promise = promise.then( () => {\n        return resource.untag({\'policy:tags-policy-error\': resource.getTag(\'policy:tags-policy-error\')});\n      });\n    }\n    return promise.then( () => {\n      return Promise.resolve(metrics);\n    });\n  }\n}', mode: 'text'}, null, opt_ijData);
       ie_open('p');
-        itext('Resources available for now :');
-      ie_close('p');
-      $templateAlias2({code: 'AMI\nEC2Instance\nEIP\nIAMUser\nInternetGateway\nNatGateway\nNetworkInterface\nS3Bucket\nSecurityGroup\nSnapshot\nSubnet\nVolume\nVPC', mode: 'text'}, null, opt_ijData);
-      ie_open('p');
-        itext('Resource also defined which CloudTrail event require reevaluations of this resource :');
-      ie_close('p');
-      $templateAlias2({code: 'const Resource = require(\'./Resource\');\n\nmodule.exports = class S3Bucket extends Resource {\n\n  static getEventMapper() {\n    return {\n      \'PutBucket.*\': \'requestParameters.bucketName\',\n      \'CreateBucket\': \'requestParameters.bucketName\'\n    }\n  }\n  ...\n}', mode: 'text'}, null, opt_ijData);
-      ie_open('p');
-        itext('The event mapper key is a RegExp to determine which type of event should generate Resource evaluation, the event mapper value represent the JSON Path to the resource id on the target event.');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -28895,11 +28871,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param247}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'KoOBp.render';
+  $render.soyTemplateName = 'YsFRD.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28909,15 +28885,14 @@ return exports;
 
 });
 
-class KoOBp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KoOBp, templates);
+class YsFRD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YsFRD, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 224 */,
 /* 225 */,
 /* 226 */,
 /* 227 */,
@@ -28931,7 +28906,10 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KoOBp, templates);
 /* 235 */,
 /* 236 */,
 /* 237 */,
-/* 238 */
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28967,9 +28945,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _markdownPostSoy = __webpack_require__(223);
+var _etiamSoy = __webpack_require__(224);
 
-var _markdownPostSoy2 = _interopRequireDefault(_markdownPostSoy);
+var _etiamSoy2 = _interopRequireDefault(_etiamSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28979,23 +28957,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var KoOBp = function (_Component) {
-  _inherits(KoOBp, _Component);
+var YsFRD = function (_Component) {
+  _inherits(YsFRD, _Component);
 
-  function KoOBp() {
-    _classCallCheck(this, KoOBp);
+  function YsFRD() {
+    _classCallCheck(this, YsFRD);
 
-    return _possibleConstructorReturn(this, (KoOBp.__proto__ || Object.getPrototypeOf(KoOBp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YsFRD.__proto__ || Object.getPrototypeOf(YsFRD)).apply(this, arguments));
   }
 
-  return KoOBp;
+  return YsFRD;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(KoOBp, _markdownPostSoy2.default);
+_metalSoy2.default.register(YsFRD, _etiamSoy2.default);
 
-exports.default = KoOBp;
+exports.default = YsFRD;
 
 /***/ })
-],[238]);
+],[241]);

@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([13,16,17,18],[
+webpackJsonppageComponent([10,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28743,12 +28743,15 @@ exports.default = parseFromAnchor;
 /* 221 */,
 /* 222 */,
 /* 223 */,
-/* 224 */
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GWKnJ", function() { return GWKnJ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "oduDa", function() { return oduDa; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28760,15 +28763,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from etiam.soy.
+// This file was automatically generated from nula.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace GWKnJ.
+ * @fileoverview Templates in namespace oduDa.
  * @public
  */
 
-goog.module('GWKnJ.incrementaldom');
+goog.module('oduDa.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28802,10 +28805,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param352 = function() {
+  var param404 = function() {
     ie_open('h6');
-      var dyn29 = opt_data.page.description;
-      if (typeof dyn29 == 'function') dyn29(); else if (dyn29 != null) itext(dyn29);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32(); else if (dyn32 != null) itext(dyn32);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
@@ -28813,11 +28816,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
       ie_open('p');
-        itext('Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque varius mattis mollis. Praesent rutrum tempor libero sit amet blandit. Integer ante nisl, rutrum ut volutpat ut, rutrum id tortor. Duis placerat ut ipsum id aliquam. Nunc venenatis sem ac urna viverra, eu euismod sapien porttitor.');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
-      $templateAlias2({code: 'body {\n    overflow: hidden;\n}', mode: 'css'}, null, opt_ijData);
+      $templateAlias2({code: 'var oi = function() {\n    console.log(\'Oi mundo\');\n};', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('Nulla a suscipit nibh. Duis tincidunt elit tellus, ut volutpat lectus pharetra at. Nulla quis nisi ante. Maecenas vulputate convallis lorem. Vestibulum at ex id sapien faucibus vehicula. Sed porta dui in velit semper blandit. Ut in commodo magna. Morbi luctus enim et lectus luctus ullamcorper. Proin tellus erat, convallis vitae metus vitae, lacinia consectetur turpis.');
+        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
       ie_close('p');
       ie_open('p');
         itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
@@ -28871,11 +28874,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param404}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'GWKnJ.render';
+  $render.soyTemplateName = 'oduDa.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28885,17 +28888,14 @@ return exports;
 
 });
 
-class GWKnJ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GWKnJ, templates);
+class oduDa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(oduDa, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 225 */,
-/* 226 */,
-/* 227 */,
 /* 228 */,
 /* 229 */,
 /* 230 */,
@@ -28909,7 +28909,9 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(GWKnJ, templates);
 /* 238 */,
 /* 239 */,
 /* 240 */,
-/* 241 */
+/* 241 */,
+/* 242 */,
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28945,9 +28947,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _etiamSoy = __webpack_require__(224);
+var _nulaSoy = __webpack_require__(227);
 
-var _etiamSoy2 = _interopRequireDefault(_etiamSoy);
+var _nulaSoy2 = _interopRequireDefault(_nulaSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28957,23 +28959,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GWKnJ = function (_Component) {
-  _inherits(GWKnJ, _Component);
+var oduDa = function (_Component) {
+  _inherits(oduDa, _Component);
 
-  function GWKnJ() {
-    _classCallCheck(this, GWKnJ);
+  function oduDa() {
+    _classCallCheck(this, oduDa);
 
-    return _possibleConstructorReturn(this, (GWKnJ.__proto__ || Object.getPrototypeOf(GWKnJ)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (oduDa.__proto__ || Object.getPrototypeOf(oduDa)).apply(this, arguments));
   }
 
-  return GWKnJ;
+  return oduDa;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(GWKnJ, _etiamSoy2.default);
+_metalSoy2.default.register(oduDa, _nulaSoy2.default);
 
-exports.default = GWKnJ;
+exports.default = oduDa;
 
 /***/ })
-],[241]);
+],[243]);

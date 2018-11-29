@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,16,17,18],[
+webpackJsonppageComponent([4,16,17,18],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -28752,14 +28752,12 @@ exports.default = parseFromAnchor;
 /* 230 */,
 /* 231 */,
 /* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dOtKl", function() { return dOtKl; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fcOln", function() { return fcOln; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -28771,15 +28769,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from second-step.soy.
+// This file was automatically generated from first-step.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace dOtKl.
+ * @fileoverview Templates in namespace fcOln.
  * @public
  */
 
-goog.module('dOtKl.incrementaldom');
+goog.module('fcOln.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -28813,10 +28811,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param473 = function() {
+  var param452 = function() {
     ie_open('h2');
-      var dyn36 = opt_data.page.title;
-      if (typeof dyn36 == 'function') dyn36(); else if (dyn36 != null) itext(dyn36);
+      var dyn35 = opt_data.page.title;
+      if (typeof dyn35 == 'function') dyn35(); else if (dyn35 != null) itext(dyn35);
     ie_close('h2');
     $templateAlias2({code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
     ie_open('p');
@@ -28834,11 +28832,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param473}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param452}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'dOtKl.render';
+  $render.soyTemplateName = 'fcOln.render';
 }
 
 exports.render.params = ["page","site"];
@@ -28848,14 +28846,16 @@ return exports;
 
 });
 
-class dOtKl extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dOtKl, templates);
+class fcOln extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fcOln, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 234 */,
+/* 235 */,
 /* 236 */,
 /* 237 */,
 /* 238 */,
@@ -28869,8 +28869,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dOtKl, templates);
 /* 246 */,
 /* 247 */,
 /* 248 */,
-/* 249 */,
-/* 250 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28906,9 +28905,9 @@ __webpack_require__(136);
 
 __webpack_require__(137);
 
-var _secondStepSoy = __webpack_require__(235);
+var _firstStepSoy = __webpack_require__(233);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _firstStepSoy2 = _interopRequireDefault(_firstStepSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28918,23 +28917,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dOtKl = function (_Component) {
-  _inherits(dOtKl, _Component);
+var fcOln = function (_Component) {
+  _inherits(fcOln, _Component);
 
-  function dOtKl() {
-    _classCallCheck(this, dOtKl);
+  function fcOln() {
+    _classCallCheck(this, fcOln);
 
-    return _possibleConstructorReturn(this, (dOtKl.__proto__ || Object.getPrototypeOf(dOtKl)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (fcOln.__proto__ || Object.getPrototypeOf(fcOln)).apply(this, arguments));
   }
 
-  return dOtKl;
+  return fcOln;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dOtKl, _secondStepSoy2.default);
+_metalSoy2.default.register(fcOln, _firstStepSoy2.default);
 
-exports.default = dOtKl;
+exports.default = fcOln;
 
 /***/ })
-],[250]);
+],[249]);

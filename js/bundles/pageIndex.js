@@ -29152,6 +29152,17 @@ function $how(opt_data, opt_ignored, opt_ijData) {
               'src', '../images/github.svg');
           ie_close('img');
         ie_close('a');
+        ie_open('h3', null, null,
+            'class', 'about-description');
+          itext('Should you have any question, feel free to contact us:');
+        ie_close('h3');
+        ie_open('h2', null, null,
+            'id', 'contactUs');
+          ie_open('a', null, null,
+              'href', 'mailto:contact@ivoryshield.io');
+            itext('contact@ivoryshield.io');
+          ie_close('a');
+        ie_close('h2');
       ie_close('div');
     ie_close('div');
   ie_close('article');
