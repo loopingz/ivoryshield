@@ -14,6 +14,8 @@ Both CloudTrail and CronScanner map AWS Resources to an object, and then use def
 
 It will configure your AWS accounts, and launch on Fargate both components
 
+Should you have any question, feel free to contact us: contact@ivoryshield.io
+
 ## Quick start
 
 Create your ivoryshield project
