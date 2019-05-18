@@ -34,7 +34,7 @@
     "elasticsearch": "^15.0.0",
     "glob": "^7.1.2",
     "jsonpath": "^1.0.0",
-    "open": "0.0.5",
+    "open": "6.0.0",
     "webda": "^0.10.0",
     "webda-shell": "^0.10.3",
     "webda-elasticsearch": "~1.0.0",
