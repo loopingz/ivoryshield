@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:moment:20160126':
+    - webda-shell > fs-finder > moment:
+        patched: '2019-06-20T04:03:23.670Z'
+    - webda-elasticsearch > webda > fs-finder > moment:
+        patched: '2019-06-20T04:03:23.670Z'
+    - webda-shell > webda > fs-finder > moment:
+        patched: '2019-06-20T04:03:23.670Z'
