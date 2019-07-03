@@ -1,0 +1,60 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - webda-shell > yeoman-environment > inquirer > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - elasticsearch > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda > email-templates > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > archiver > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > elasticsearch > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > archiver > async > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > yeoman-environment > grouped-queue > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > generator-webda > yeoman-generator > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > webda > email-templates > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > request-promise > request-promise-core > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > archiver > zip-stream > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > archiver > archiver-utils > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > yeoman-environment > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > generator-webda > yeoman-generator > async > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > html-to-text > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > @ladjs/i18n > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > archiver > zip-stream > archiver-utils > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > generator-webda > yeoman-generator > yeoman-environment > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda > email-templates > juice > web-resource-inliner > async > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > generator-webda > yeoman-generator > yeoman-environment > grouped-queue > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > generator-webda > yeoman-generator > yeoman-environment > inquirer > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > juice > web-resource-inliner > async > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-shell > webda > email-templates > juice > web-resource-inliner > async > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > preview-email > pug > pug-code-gen > constantinople > babel-types > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > preview-email > pug > pug-filters > constantinople > babel-types > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
+    - webda-elasticsearch > webda > email-templates > preview-email > pug > pug-code-gen > pug-attrs > constantinople > babel-types > lodash:
+        patched: '2019-07-03T23:13:51.104Z'
