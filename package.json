@@ -1,6 +1,6 @@
 {
   "name": "ivoryshield",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "description": "Protect your cloud and automate it",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -35,9 +35,10 @@
     "glob": "^7.1.2",
     "jsonpath": "^1.0.0",
     "open": "0.0.5",
-    "webda": "^0.10.0",
-    "webda-shell": "^0.10.3",
-    "webda-elasticsearch": "~1.0.0",
+    "webda": "^0.11.4",
+    "webda-shell": "^0.11.2",
+    "webda-aws": "^0.11.0",
+    "webda-elasticsearch": "^1.0.0",
     "yargs": "^11.0.0"
   },
   "devDependencies": {
@@ -45,6 +46,6 @@
     "js-beautify": "^1.7.5",
     "source-map-support": "^0.5.4",
     "ts-node": "^5.0.1",
-    "typescript": "^2.8.1"
+    "typescript": "^3.5.0"
   }
 }
