@@ -1,8 +1,5 @@
 # IvoryShield
-
-<p align="center">
-  <img src="/wui/images/logo.png" alt="IvoryShield logo"/>
-</p>
+<p align="center"><img src="/wui/images/logo.png" alt="IvoryShield logo"/></p>
 
 This project aims to solve monitoring and auto-remediation of your AWS accounts, with a reasonable budget
 
