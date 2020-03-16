@@ -39,7 +39,7 @@
     "webda-shell": "^0.11.2",
     "webda-aws": "^0.11.0",
     "webda-elasticsearch": "^1.0.0",
-    "yargs": "^11.0.0"
+    "yargs": "^13.1.0"
   },
   "devDependencies": {
     "@types/node": "^10.0.8",
