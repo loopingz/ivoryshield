@@ -9,7 +9,9 @@
     "pretest": "npm run build",
     "test": "echo \"Error: no test specified\"",
     "format": "node ./scripts/format.js",
-    "precommit": "npm run format && npm run test"
+    "precommit": "npm run format && npm run test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -39,7 +41,8 @@
     "webda-shell": "^0.11.2",
     "webda-aws": "^0.11.0",
     "webda-elasticsearch": "^1.0.0",
-    "yargs": "^11.0.0"
+    "yargs": "^11.0.0",
+    "snyk": "^1.199.2"
   },
   "devDependencies": {
     "@types/node": "^10.0.8",
@@ -47,5 +50,6 @@
     "source-map-support": "^0.5.4",
     "ts-node": "^5.0.1",
     "typescript": "^3.5.0"
-  }
+  },
+  "snyk": true
 }
